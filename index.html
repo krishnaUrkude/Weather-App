@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <marquee  behavior="alternate" direction="right"><i style="color:#c31414; font-size:23px">|| welcome to the weather app here you can check the latest weather condition of your city||</i></marquee>
+    <marquee  behavior="alternate" direction="right"><i style="color:#e21c1c; font-size:23px">||where you can check the today temperature humidity,wind speed,temperature of the city||</i></marquee>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <!-- search end -->
+<!-- main part  -->
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon" alt="">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">india</h2>
+            <div class="details">
+                <!-- column -->
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- js link -->
+<script src="weather.js"></script>
+
+</body>
+</html>
